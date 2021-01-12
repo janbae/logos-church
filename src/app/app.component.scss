@@ -1,3 +1,8 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
 #logos-nav {
   //background-color: #fda172; /*whichever you want*/
   background-image: linear-gradient(to right, #be5504, #ed820e, #fda172);
@@ -5,32 +10,30 @@
   //filter:(opacity=50);
 }
 
-.white-text {
-  color: #fff;
+.black-text {
+  color: black;
+  font-family: Serif;
+  font-weight: bold;
+  font-size: larger;
 }
 
-body, html {
-  height: 100%;
-  margin: 0;
+.menu-button {
+  font-size: xx-small;
+  background-color: green;
 }
 
-img {
-  height: 80vh;
+.span-menu:hover {
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: white;
 }
 
-.bg {
-  /* The image used */
-  //background-image: url("/assets/images/cross.jpg");
+.span-menu {
+  font-weight: bolder;
+}
 
-  /* Full height */
-  //height: 100%;
-  //
-  ///* Center and scale the image nicely */
-  //background-position: center;
-  //background-repeat: no-repeat;
-  //background-size: cover;
-
-  height:40em; background-size:cover; width:auto;
-  background-image:url('/assets/images/cross.jpg');
-  background-position:50% 50%;
+@media only screen and (min-width: 992px) {
+  li {
+    margin: auto 3em;
+  }
 }
